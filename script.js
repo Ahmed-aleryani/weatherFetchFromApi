@@ -1,3 +1,5 @@
+
+
 window.addEventListener("DOMContentLoaded",function(){
 
   var searchForm=document.getElementById("searchForm");
@@ -27,7 +29,7 @@ _cityWether  = ( cityId , date) =>{
   fetch(`https://www.metaweather.com/api/location/${cityId}/${data}/`)
   .then(respnse => respnse.json())
   .then(data => {
-    return()
+   //fill the city wether array
   }).catch(e => {
     console.log(e)
   })
